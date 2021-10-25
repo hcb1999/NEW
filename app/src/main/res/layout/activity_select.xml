@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#000000"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="335dp"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/edittitle"
+            android:layout_width="match_parent"
+            android:layout_height="168dp"
+            android:backgroundTint="@color/white"
+            android:gravity="center_vertical"
+            android:inputType="textMultiLine"
+            android:paddingLeft="40dp"
+            android:hint="일정 제목"
+            android:textColor="@color/white"
+            android:textSize="50sp"
+            android:textColorHint="@color/white" />
+
+
+        <TextView
+            android:id="@+id/where"
+            android:layout_width="315dp"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:text="장소"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/editstart"
+            android:layout_width="317dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="100dp"
+            android:backgroundTint="@color/white"
+            android:hint="출발지 검색                                      에서"
+            android:inputType="textMultiLine"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/white" />
+
+        <EditText
+            android:id="@+id/editfinal"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:backgroundTint="@color/white"
+            android:hint="도착지 검색                                  가는길"
+            android:inputType="textMultiLine"
+            android:paddingLeft="105dp"
+            android:textColor="#ffffff"
+            android:textColorHint="@color/white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/time"
+            android:layout_width="130dp"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:text="시간"
+            android:textColor="#ffffff"
+            android:textSize="30sp" />
+
+        <EditText
+            android:id="@+id/Time"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="50dp"
+            android:clickable="true"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            style="?android:borderlessButtonStyle"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#ffffff"
+            android:text="~"/>
+        <EditText
+            android:id="@+id/Time2"
+            android:layout_width="wrap_content"
+            android:layout_height="55dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="15dp"
+            android:clickable="true"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            style="?android:borderlessButtonStyle"/>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/alarm"
+            android:layout_width="165dp"
+            android:layout_height="55dp"
+            android:gravity="bottom"
+            android:paddingLeft="60dp"
+            android:text="알림"
+            android:textColor="#ffffff"
+            />
+        <EditText
+            android:id="@+id/alarmtime"
+            android:layout_width="165dp"
+            android:layout_height="55dp"
+            android:gravity="bottom"
+            android:paddingLeft="15sp"
+            android:text="00:00"
+            android:textColor="#ffffff"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="60dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="확인"
+
+        />
+</LinearLayout>
